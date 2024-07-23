@@ -34,7 +34,7 @@ impl Spawner {
             future: Mutex::new(Some(future)),
             task_sender: self.task_sender.clone(),
         });
-        tra
+        
 
         self.task_sender.send(task).expect("too many tasks queued")
     }
